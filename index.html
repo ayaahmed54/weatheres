@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <!-- Bootstrap CSS -->
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="./css/all.css">
+  <!-- Custom CSS -->
+  
+  <link rel="stylesheet" href="./css/stylee.css">
+</head>
+<body>
+  <div class="site-content">
+    <header class="site-header">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <a class="branding text-decoration-none d-flex align-items-center" href="/">
+            <img src="./images/logo.png" alt="Weather Logo" class="logo me-2">
+            <div class="logo-type">
+              <h1 class="site-title mb-1">Weather</h1>
+              <small class="site-description d-block">Tagline goes here</small>
+            </div>
+          </a><nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid">
+    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav custom-nav">
+        <li class="nav-item me-2">
+          <a class="nav-link active" href="/">Home</a>
+        </li>
+        <li class="nav-item me-2">
+          <a class="nav-link" href="#">News</a>
+        </li>
+        <li class="nav-item me-2">
+          <a class="nav-link" href="#">Live cameras</a>
+        </li>
+        <li class="nav-item me-2">
+          <a class="nav-link" href="#">Photos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero" style="background-image: url('./images/banner.png');">
+      <div class="container">
+        <form class="find-location position-relative">
+          <input type="text" placeholder="Find your location..." id="search">
+          <input type="button"  class="btn btn-primary position-absolute top-0 end-0 h-100" value="Find" id="submit">
+        </form>
+      </div>
+    </section>
+
+    <div class="forecast-table">
+      <div class="container">
+        <div class="forecast-container row " id="forecast">
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-8 mb-4 mb-md-0">
+          <form class="subscribe-form position-relative">
+            <input type="text" placeholder="Enter your email to subscribe...">
+            <button type="button" class="btn btn-primary position-absolute top-0 end-0 h-100 px-4" id="subscribe-btn">
+              Subscribe
+            </button>
+          </form>
+        </div>
+        <div class="col-lg-6 col-md-4">
+          <div class="social-links d-flex justify-content-md-end">
+            <a href="#" class="social-link me-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link me-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link me-2"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12">
+          <p class="colophon mb-0">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="./js/index.js"></script>
+  
+</html>
